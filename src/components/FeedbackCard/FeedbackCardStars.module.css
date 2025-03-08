@@ -1,0 +1,8 @@
+.feedbackCardStars {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--pi-c8);
+  margin-bottom: 1.25rem;
+}

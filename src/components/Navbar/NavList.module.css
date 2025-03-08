@@ -1,0 +1,36 @@
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2.5rem;
+  min-width: 8.75rem;
+}
+
+.navList[data-mobile-list="true"] {
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 3.75rem;
+  background-color: var(--pi-c0);
+  border: 1px solid var(--pi-c1);
+  border-radius: 4px;
+  box-shadow: var(--shadow-md);
+  gap: 0;
+  animation: showMenuList 0.3s;
+}
+
+.navList[data-mobile-list="true"][data-active="false"] {
+  display: none;
+}
+
+@keyframes showMenuList {
+  from {
+    opacity: 0;
+    transform: translateY(-1.875rem);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
