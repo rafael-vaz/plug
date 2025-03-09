@@ -75,4 +75,4 @@ Access the project in: http://localhost:3000
 
 ## 🚀 Deploy
 
-Access the project through the link:
+Access the project through the link: https://plug-ti.vercel.app/
