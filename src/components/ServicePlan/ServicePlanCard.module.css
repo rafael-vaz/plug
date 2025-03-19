@@ -1,0 +1,112 @@
+.servicePlanCard {
+  min-height: max-content;
+  width: 100%;
+  background-color: var(--pi-c0);
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-md);
+  flex-shrink: 16.875rem;
+  flex-basis: 16.875rem;
+  flex-grow: 1;
+}
+
+.servicePlanCard[data-color="blue"] {
+  background-color: var(--pi-c6);
+}
+
+.servicePlanCardTitle {
+  position: relative;
+  font-family: var(--title-font);
+  font-size: 1.625rem;
+  color: var(--pi-c4);
+  margin-bottom: 1.25rem;
+  margin-left: 0.25rem;
+  z-index: 1;
+}
+
+.servicePlanCard[data-color="blue"] .servicePlanCardTitle {
+  color: var(--pi-c0);
+}
+
+.servicePlanCardTitle::before {
+  position: absolute;
+  left: -0.25rem;
+  bottom: 0.375rem;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--pi-c8);
+  z-index: -1;
+  border-radius: 0.25rem;
+}
+
+.servicePlanCard[data-color="blue"] .servicePlanCardTitle::before {
+  background: linear-gradient(to top, var(--pi-g0));
+}
+
+.servicePlanCardText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--pi-c4);
+  font-weight: 600;
+  gap: 0.625rem;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+.servicePlanCard[data-color="blue"] .servicePlanCardText {
+  color: var(--pi-c0);
+}
+
+.servicePlanCardBillingFrequency {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.servicePlanCardBenefitsList {
+  list-style: none;
+  font-family: var(--content-font);
+  font-size: 1rem;
+  color: var(--pi-c4);
+  margin-bottom: 1.25rem;
+}
+
+.servicePlanCard[data-color="blue"] .servicePlanCardBenefitsList {
+  color: var(--pi-c0);
+}
+
+.servicePlanCardBenefitsListItem {
+  position: relative;
+  line-height: 1.6;
+  padding: 0.625rem 0 0.625rem 1.625rem;
+  border-bottom: 1px solid var(--pi-c1);
+}
+
+.servicePlanCardBenefitsListItem::before {
+  position: absolute;
+  top: 0.8125rem;
+  left: 0;
+  margin-right: 0.5rem;
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjk1MTMgNi40MzMyN0MxMy4wMTU3IDYuNDk3NTYgMTMuMDY2OCA2LjU3MzkyIDEzLjEwMTYgNi42NTc5NkMxMy4xMzY1IDYuNzQyMDEgMTMuMTU0NCA2LjgzMjEgMTMuMTU0NCA2LjkyMzA4QzEzLjE1NDQgNy4wMTQwNiAxMy4xMzY1IDcuMTA0MTQgMTMuMTAxNiA3LjE4ODE5QzEzLjA2NjggNy4yNzIyMyAxMy4wMTU3IDcuMzQ4NTkgMTIuOTUxMyA3LjQxMjg4TDguMTA1MiAxMi4yNTlDOC4wNDA5IDEyLjMyMzQgNy45NjQ1NCAxMi4zNzQ1IDcuODgwNSAxMi40MDkzQzcuNzk2NDUgMTIuNDQ0MSA3LjcwNjM3IDEyLjQ2MjEgNy42MTUzOSAxMi40NjIxQzcuNTI0NDEgMTIuNDYyMSA3LjQzNDMyIDEyLjQ0NDEgNy4zNTAyNyAxMi40MDkzQzcuMjY2MjMgMTIuMzc0NSA3LjE4OTg4IDEyLjMyMzQgNy4xMjU1OCAxMi4yNTlMNS4wNDg2NiAxMC4xODIxQzQuOTE4NzUgMTAuMDUyMiA0Ljg0NTc3IDkuODc2MDIgNC44NDU3NyA5LjY5MjMxQzQuODQ1NzcgOS41MDg1OSA0LjkxODc1IDkuMzMyNCA1LjA0ODY2IDkuMjAyNUM1LjE3ODU2IDkuMDcyNTkgNS4zNTQ3NSA4Ljk5OTYxIDUuNTM4NDYgOC45OTk2MUM1LjcyMjE4IDguOTk5NjEgNS44OTgzNyA5LjA3MjU5IDYuMDI4MjcgOS4yMDI1TDcuNjE1MzkgMTAuNzkwNUwxMS45NzE3IDYuNDMzMjdDMTIuMDM2IDYuMzY4OSAxMi4xMTI0IDYuMzE3ODQgMTIuMTk2NCA2LjI4M0MxMi4yODA1IDYuMjQ4MTYgMTIuMzcwNiA2LjIzMDIyIDEyLjQ2MTUgNi4yMzAyMkMxMi41NTI1IDYuMjMwMjIgMTIuNjQyNiA2LjI0ODE2IDEyLjcyNjcgNi4yODNDMTIuODEwNyA2LjMxNzg0IDEyLjg4NzEgNi4zNjg5IDEyLjk1MTMgNi40MzMyN1pNMTggOUMxOCAxMC43OCAxNy40NzIyIDEyLjUyMDEgMTYuNDgzMiAxNC4wMDAxQzE1LjQ5NDMgMTUuNDgwMiAxNC4wODg3IDE2LjYzMzcgMTIuNDQ0MiAxNy4zMTQ5QzEwLjc5OTYgMTcuOTk2MSA4Ljk5MDAyIDE4LjE3NDMgNy4yNDQxOSAxNy44MjcxQzUuNDk4MzYgMTcuNDc5OCAzLjg5NDcxIDE2LjYyMjYgMi42MzYwNCAxNS4zNjRDMS4zNzczNyAxNC4xMDUzIDAuNTIwMjAzIDEyLjUwMTYgMC4xNzI5MzYgMTAuNzU1OEMtMC4xNzQzMyA5LjAwOTk4IDAuMDAzODk5NTYgNy4yMDAzOCAwLjY4NTA4OCA1LjU1NTg1QzEuMzY2MjggMy45MTEzMSAyLjUxOTgzIDIuNTA1NzEgMy45OTk4NyAxLjUxNjc3QzUuNDc5OTEgMC41Mjc4NDEgNy4yMTk5NyAwIDkgMEMxMS4zODYyIDAuMDAyNTE5ODQgMTMuNjczOSAwLjk1MTU0IDE1LjM2MTIgMi42Mzg4MkMxNy4wNDg1IDQuMzI2MSAxNy45OTc1IDYuNjEzODIgMTggOVpNMTYuNjE1NCA5QzE2LjYxNTQgNy40OTM4MiAxNi4xNjg4IDYuMDIxNDYgMTUuMzMyIDQuNzY5MTJDMTQuNDk1MiAzLjUxNjc3IDEzLjMwNTggMi41NDA2OSAxMS45MTQzIDEuOTY0M0MxMC41MjI4IDEuMzg3OTEgOC45OTE1NSAxLjIzNzEgNy41MTQzMSAxLjUzMDk0QzYuMDM3MDggMS44MjQ3OCA0LjY4MDE0IDIuNTUwMDggMy42MTUxMSAzLjYxNTExQzIuNTUwMDggNC42ODAxNCAxLjgyNDc5IDYuMDM3MDcgMS41MzA5NSA3LjUxNDMxQzEuMjM3MTEgOC45OTE1NSAxLjM4NzkyIDEwLjUyMjcgMS45NjQzMSAxMS45MTQzQzIuNTQwNyAxMy4zMDU4IDMuNTE2NzggMTQuNDk1MiA0Ljc2OTEyIDE1LjMzMkM2LjAyMTQ2IDE2LjE2ODcgNy40OTM4MiAxNi42MTU0IDkgMTYuNjE1NEMxMS4wMTkgMTYuNjEzMSAxMi45NTQ3IDE1LjgxIDE0LjM4MjQgMTQuMzgyNEMxNS44MSAxMi45NTQ3IDE2LjYxMzEgMTEuMDE5IDE2LjYxNTQgOVoiIGZpbGw9IiMwMENDREQiLz4KPC9zdmc+Cg==");
+  height: 1.125rem;
+  width: 1.125rem;
+}
+
+@media (max-width: 31.25rem) {
+  .servicePlanCardTitle {
+    font-size: 1.25rem;
+  }
+  .servicePlanCardTitle::before {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  .servicePlanCardText {
+    font-size: 1.625rem;
+  }
+  .servicePlanCardBillingFrequency {
+    font-size: 1rem;
+  }
+}

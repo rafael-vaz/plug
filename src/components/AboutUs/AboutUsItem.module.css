@@ -1,0 +1,40 @@
+.aboutUsItem {
+  width: 100%;
+}
+
+.aboutUsItem svg {
+  color: var(--pi-c8);
+}
+
+.aboutUsItem + .aboutUsItem {
+  margin-top: 2rem;
+}
+
+.aboutUsItemTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutUsItemTitle span {
+  font-family: var(--title-font);
+  font-size: 1.625rem;
+  color: var(--pi-c4);
+  line-height: 1.6;
+}
+
+.aboutUsItemText {
+  max-width: 28.75rem;
+  font-family: var(--content-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--pi-c4);
+}
+
+@media (max-width: 56.25rem) {
+  .aboutUsItemTitle span {
+    font-size: 1.5rem;
+  }
+}

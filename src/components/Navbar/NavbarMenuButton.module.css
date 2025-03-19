@@ -1,0 +1,18 @@
+.navbarMenuButton {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 0.25rem;
+  border: none;
+  color: var(--pi-c6);
+  background-color: var(--pi-c0);
+  border: 1px solid var(--pi-c1);
+}
+
+.navbarMenuButton[data-active="true"],
+.navbarMenuButton:hover {
+  background-color: var(--pi-c1);
+}

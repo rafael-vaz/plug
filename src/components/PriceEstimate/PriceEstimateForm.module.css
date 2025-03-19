@@ -1,0 +1,29 @@
+.priceEstimateForm {
+  grid-area: 1/2;
+}
+
+.priceEstimateFormContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.priceEstimareFormCounters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 65.625rem) {
+  .priceEstimateForm {
+    grid-area: unset;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .priceEstimateFormContent {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

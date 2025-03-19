@@ -1,0 +1,48 @@
+.feedbackCard {
+  cursor: pointer;
+  min-height: 15rem;
+  height: auto;
+  width: 21.25rem;
+  padding: 1.25rem;
+  background-color: var(--pi-c0);
+  border: 1px solid var(--pi-c1);
+  box-shadow: var(--shadow-md);
+  border-radius: 0.25rem;
+  user-select: none;
+}
+
+.feedbackCard:last-of-type {
+  margin-right: 2.5rem;
+}
+
+.feedbackCardHeader {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  transform: translateX(-2.8125rem);
+  margin-bottom: 1rem;
+}
+
+.feedbackCardPhoto {
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 0.25rem;
+}
+
+.feedbackCardName {
+  font-family: var(--title-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--pi-c4);
+}
+
+.feedbackCardComment {
+  font-family: var(--content-font);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--pi-c4);
+  line-height: 1.6;
+}
