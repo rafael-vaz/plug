@@ -1,0 +1,6 @@
+.separator {
+  border-top: 1px solid var(--pi-c2);
+  border-bottom: none;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}

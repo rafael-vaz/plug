@@ -1,0 +1,87 @@
+.servicesInfoItem {
+  display: none;
+  grid-template-columns: 25rem 1fr;
+  place-items: start;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.servicesInfoItem[data-active="true"] {
+  display: grid;
+}
+
+.servicesInfoItemCover {
+  height: 100%;
+  width: 100%;
+}
+
+.servicesInfoItemCover img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.servicesInfoItemContent {
+  color: var(--pi-c4);
+  padding: 2rem;
+  background-color: var(--pi-c9);
+}
+
+.servicesInfoItemText {
+  font-size: 1rem;
+  font-family: var(--content-font);
+  color: var(--pic-4);
+}
+
+.servicesInfoItemText p {
+  line-height: 1.6;
+  margin: 1.25rem 0;
+}
+
+.servicesInfoItem ul {
+  list-style: none;
+}
+
+.servicesInfoItem ul li {
+  position: relative;
+  line-height: 1.6;
+  margin: 0.625rem 0;
+  padding-left: 1.125rem;
+}
+
+.servicesInfoItem ul li::before {
+  position: absolute;
+  left: 0;
+  color: var(--pi-c8);
+  content: "●";
+  margin-right: 0.5rem;
+}
+
+.servicesInfoItemTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--title-font);
+  font-size: 1.625rem;
+  color: var(--pi-c4);
+}
+
+.servicesInfoItemTitle svg {
+  color: var(--pi-c8);
+}
+
+@media (max-width: 56.25rem) {
+  .servicesInfoItem {
+    grid-template-columns: 1fr;
+    max-height: 28.75rem;
+    overflow-y: auto;
+  }
+  .servicesInfoItemCover {
+    max-height: 12.5rem;
+  }
+  .servicesInfoItemTitle {
+    font-size: 1.25rem;
+  }
+}

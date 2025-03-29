@@ -1,0 +1,47 @@
+.qualityCard {
+  margin-top: 1.5625rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 9.6875rem;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--pi-c1);
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  flex-shrink: 16.875rem;
+  flex-basis: 16.875rem;
+  flex-grow: 1;
+}
+
+.qualityCardTitle {
+  font-family: var(--title-font);
+  font-size: 1.625rem;
+  color: var(--pi-c4);
+  line-height: 1.6;
+}
+
+.qualityCardText {
+  font-family: var(--content-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--pi-c4);
+}
+
+.qualityCardIcon {
+  position: absolute;
+  height: 3.125rem;
+  width: 3.125rem;
+  left: 50%;
+  top: -1.5625rem;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 56.25rem) {
+  .qualityCardTitle {
+    font-size: 1.5rem;
+  }
+}
