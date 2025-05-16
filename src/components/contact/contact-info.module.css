@@ -1,0 +1,39 @@
+.contactInfo {
+  width: 100%;
+}
+
+.contactInfoTitle {
+  font-family: var(--title-font);
+  font-size: 1.625rem;
+  color: var(--pi-c4);
+  margin-bottom: 1.25rem;
+}
+
+.contactInfoText {
+  font-family: var(--content-font);
+  font-size: 1rem;
+  color: var(--pi-c4);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.contactInfoList {
+  list-style: none;
+  font-family: var(--content-font);
+  font-size: 1rem;
+  color: var(--pi-c4);
+}
+
+.contactInfoList li {
+  line-height: 1.6;
+}
+
+.contactInfoList li + li {
+  margin-top: 1.25rem;
+}
+
+.emphasisText {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--pi-c7);
+}

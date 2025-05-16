@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- charset -->
+    <meta charset="UTF-8" />
+    <!-- author -->
+    <meta name="author" content="Rafael Vaz" />
+    <!-- seo -->
+    <meta
+      name="description"
+      content="A Plug oferece soluções em TI: manutenção de computadores, suporte remoto, redes e segurança digital para sua empresa."
+    />
+    <!-- open graph: social sharing -->
+    <meta property="og:title" content="Plug - Suporte em TI" />
+    <meta
+      property="og:description"
+      content="A Plug oferece soluções integradas de TI para empresas, com serviços de manutenção de computadores, suporte remoto, gestão de redes e segurança digital. Garantimos o bom funcionamento da sua infraestrutura tecnológica com agilidade, estabilidade e proteção, para que você possa focar no que realmente importa: o crescimento do seu negócio."
+    />
+    <meta
+      property="og:image"
+      content="https://plug-ti.vercel.app/img/thumb.jpg"
+    />
+    <meta property="og:url" content="https://plug-ti.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <!-- responsive settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/img/logo/logo.svg"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- page title -->
+    <title>Plug</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- vlibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
+</html>

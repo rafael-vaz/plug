@@ -1,0 +1,52 @@
+/*? global formatting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: var(--content-font);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/*? variables */
+:root {
+  /** colors */
+  --pi-c0: #fff;
+  --pi-c1: #e0e5f0;
+  --pi-c2: #b0bacf;
+  --pi-c3: #6e798e;
+  --pi-c4: #212121;
+  --pi-c5: #000;
+  --pi-c6: #050c9c;
+  --pi-c7: #2960cf;
+  --pi-c8: #00ccdd;
+  --pi-c9: #e2f4fc;
+  --pi-c10: #e1f8fa;
+  --pi-g0: var(--pi-c8), var(--pi-c7), var(--pi-c6);
+
+  /** shadow */
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  /** fonts */
+  --title-font: "Poppins", serif;
+  --content-font: "Open Sans", serif;
+
+  /** navbar height */
+  --navbar-height: 3.75rem;
+
+  /** wrapper */
+  --wrapper: 75rem;
+
+  /** breakpoints */
+  --bp-xlg: 87.5rem;
+  --bp-lg: 75rem;
+  --bp-md: 56.25rem;
+  --bp-sm: 31.25rem;
+  --bp-xsm: 21.875rem;
+}

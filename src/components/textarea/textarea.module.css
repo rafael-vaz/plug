@@ -1,0 +1,16 @@
+.textarea {
+  min-height: 5rem;
+  width: 100%;
+  padding: 0.375rem 0.625rem;
+  border: 2px solid var(--pi-c2);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: var(--content-font);
+  color: var(--pi-c4);
+  margin-bottom: 1.25rem;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline-color: var(--pi-c6);
+}

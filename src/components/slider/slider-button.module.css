@@ -1,0 +1,21 @@
+.sliderButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  border: 0.125rem solid var(--pi-c3);
+  background: var(--pi-c0);
+}
+
+.sliderButton[data-active="true"]::after {
+  content: "";
+  position: absolute;
+  height: 0.625rem;
+  width: 0.625rem;
+  background-color: var(--pi-c3);
+  border-radius: 50%;
+}

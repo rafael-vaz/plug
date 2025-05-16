@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  cursor: pointer;
+  padding: 0.625rem 0.875rem;
+  min-width: 8.75rem;
+  background-color: var(--pi-c8);
+  border-radius: 0.25rem;
+  font-family: var(--title-font);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--pi-c4);
+  border: none;
+  margin: 0 auto;
+  box-shadow: var(--shadow-md);
+}
+
+.button[data-type="gradient"] {
+  background: linear-gradient(to bottom, var(--pi-g0));
+  color: var(--pi-c0);
+}
+
+.button:hover {
+  outline: 2px solid var(--pi-c4);
+}
+
+@media (max-width: 31.25rem) {
+  .button {
+    font-size: 1rem;
+  }
+}

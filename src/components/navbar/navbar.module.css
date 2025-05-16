@@ -1,0 +1,40 @@
+#navbar {
+  position: absolute;
+  height: var(--navbar-height);
+  width: 100%;
+  border-bottom: 1px solid var(--pi-c2);
+  transition: 0.3s;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--pi-c0);
+  z-index: 4;
+}
+
+#navbar[data-nav-fixed="true"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--pi-c6);
+  border-bottom: 1px solid var(--pi-c6);
+  animation: showNavbar 0.3s;
+  border-bottom: none;
+}
+
+.navLogo {
+  height: 2.375rem;
+  width: 2.375rem;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes showNavbar {
+  from {
+    top: -5rem;
+  }
+  to {
+    top: 0;
+  }
+}

@@ -1,0 +1,43 @@
+.contactForm {
+  width: 100%;
+  padding: 3.75rem;
+  border: 2px solid var(--pi-c8);
+  border-radius: 0.25rem;
+}
+
+.contactFormTitle {
+  font-family: var(--title-font);
+  font-size: 1.625rem;
+  color: var(--pi-c4);
+  margin-bottom: 1.25rem;
+}
+
+.contactFormText {
+  font-family: var(--content-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--pi-c4);
+  margin-bottom: 2rem;
+}
+
+.contactFormContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 56.25rem) {
+  .contactForm {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .contactForm {
+    padding: 1.25rem;
+  }
+  .contactFormContent {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

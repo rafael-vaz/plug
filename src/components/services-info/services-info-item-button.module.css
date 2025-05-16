@@ -1,0 +1,47 @@
+.servicesInfoItemButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
+  min-width: 12.5rem;
+  font-family: var(--content-font);
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  color: var(--pi-c4);
+  background-color: var(--pi-c0);
+  border: 1px solid var(--pi-c1);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.servicesInfoItemButton:hover {
+  border-color: var(--pi-c7);
+}
+
+.servicesInfoItemButton[data-active="true"] {
+  color: var(--pi-c0);
+  border-color: var(--pi-c6);
+  background-color: var(--pi-c6);
+}
+
+.servicesInfoItemButton svg {
+  color: var(--pi-c7);
+  font-size: 1.25rem;
+}
+
+.servicesInfoItemButton[data-active="true"] svg {
+  color: var(--pi-c8);
+}
+
+@media (max-width: 31.25rem) {
+  .servicesInfoItemButton {
+    min-width: auto;
+    width: 2.5rem;
+  }
+  .servicesInfoItemButton span {
+    display: none;
+  }
+}
