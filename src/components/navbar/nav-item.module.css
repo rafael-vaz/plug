@@ -1,0 +1,74 @@
+.navItem {
+  position: relative;
+}
+
+.navItem + .navItem::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1.25rem;
+  height: 1.5625rem;
+  width: 1px;
+  background-color: var(--pi-c2);
+}
+
+.navLink {
+  gap: 0.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navLinkText {
+  font-size: 1rem;
+  font-family: var(--title-font);
+  transition: 0.2s;
+}
+
+.navItem.darkColor .navLink svg,
+.navItem.darkColor .navLinkText[data-active="true"] {
+  color: var(--pi-c7);
+}
+
+.navItem.lightColor .navLink svg,
+.navItem.lightColor .navLinkText[data-active="true"] {
+  color: var(--pi-c8);
+}
+
+.navItem.darkColor .navLinkText {
+  color: var(--pi-c4);
+}
+
+.navItem.lightColor .navLinkText {
+  color: var(--pi-c1);
+}
+
+.navItem.darkColor:hover .navLinkText:not([data-active="true"]) {
+  color: var(--pi-c3);
+}
+
+.navItem.lightColor:hover .navLinkText:not([data-active="true"]) {
+  color: var(--pi-c2);
+}
+
+.navItem[data-mobile-item="true"] + .navItem[data-mobile-item="true"]::after {
+  display: none;
+}
+
+.navItem[data-mobile-item="true"] + .navItem[data-mobile-item="true"] {
+  border-top: 1px solid var(--pi-c1);
+}
+
+.navItem[data-mobile-item="true"] {
+  width: 100%;
+}
+
+.navItem[data-mobile-item="true"] .navLink {
+  justify-content: flex-start;
+  padding: 0.75rem;
+}
+
+.navItem[data-mobile-item="true"]:has(.navLinkText[data-active="true"]) {
+  background-color: var(--pi-c9);
+}

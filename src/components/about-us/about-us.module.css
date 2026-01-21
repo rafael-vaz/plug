@@ -1,0 +1,84 @@
+.aboutUsContainer {
+  position: relative;
+  background-color: var(--pi-c9);
+  padding: 3.75rem 1.25rem;
+}
+
+.aboutUsDecoWaves {
+  position: absolute;
+  height: auto;
+  width: 2.5rem;
+  top: -5rem;
+  left: 50%;
+}
+
+.aboutUsDecoArrow {
+  position: absolute;
+  height: auto;
+  width: 3.75rem;
+  right: 0;
+  bottom: 0;
+}
+
+.aboutUsContent {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: start;
+  gap: 3.75rem;
+}
+
+.aboutUsImgContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.aboutUsImg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.25rem;
+}
+
+.aboutUsText {
+  color: var(--pi-c4);
+  font-family: var(--content-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 87.5rem) {
+  .aboutUsDecoArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 75rem) {
+  .aboutUsContent {
+    grid-template-columns: 1fr;
+  }
+  .aboutUsImgContainer {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .aboutUsContainer {
+    padding: 2.5rem 1.25rem;
+  }
+  .aboutUsDecoWaves {
+    top: -3.75rem;
+  }
+  .aboutUsImgContainer {
+    max-height: 18.75rem;
+  }
+  .aboutUsContent {
+    gap: 2.5rem;
+  }
+}

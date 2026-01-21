@@ -1,0 +1,19 @@
+.servicesInfoItemsButtonsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  gap: 1.875rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 62.5rem) {
+  .servicesInfoItemsButtonsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .servicesInfoItemsButtonsContainer {
+    grid-template-columns: repeat(4, auto);
+  }
+}

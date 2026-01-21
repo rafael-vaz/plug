@@ -1,0 +1,27 @@
+.partnersList {
+  padding: 3.75rem 1.25rem;
+  background-color: var(--pi-c9);
+}
+
+.emblaContainer {
+  gap: 2.25rem;
+}
+
+.emblaViewport {
+  padding-left: 2.125rem;
+}
+
+@media (max-width: 46.875rem) {
+  .emblaViewport {
+    padding-left: 1.25rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .partnersList {
+    padding: 2.5rem 1.25rem;
+  }
+  .emblaContainer {
+    gap: 1.25rem;
+  }
+}

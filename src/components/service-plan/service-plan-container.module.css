@@ -1,0 +1,43 @@
+.servicePlanContainer {
+  width: 100%;
+  padding: 3.75rem 1.25rem;
+  background-color: var(--pi-c10);
+}
+
+.servicePlanContent {
+  position: relative;
+}
+
+.servicePlanDecoCircles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 6.25rem;
+}
+
+.servicePlanDecoArrow {
+  height: 3.75rem;
+  width: 3.75rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 62.5rem) {
+  .servicePlanDecoCircles {
+    display: none;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .servicePlanDecoArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .servicePlanContainer {
+    padding: 2.5rem 1.25rem;
+  }
+}

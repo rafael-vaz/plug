@@ -1,0 +1,24 @@
+.feedbackCardList {
+  padding: 3.75rem 1.25rem;
+}
+
+.emblaViewport {
+  padding-left: 3.5rem;
+}
+
+@media (max-width: 56.25rem) {
+  .emblaViewport {
+    padding-left: 3.125rem;
+  }
+}
+@media (max-width: 31.25rem) {
+  .emblaViewport {
+    padding-left: 2.5rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .feedbackCardList {
+    padding: 2.5rem 1.25rem;
+  }
+}
