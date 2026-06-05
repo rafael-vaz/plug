@@ -1,78 +1,128 @@
-# 💻 Plug - IT Solutions
+<h1 align="center">
+	<img src="./public/img/logo.svg" alt="Plug IT Solutions" width="140" />
+</h1>
 
-This is a website project for a company that specializes in IT solutions, offering services from:
+<p align="center">
+	Digital solutions and IT services focused on performance, security, and reliability.
+</p>
 
-- **Support and maintenance**: Technical support to ensure the functioning of systems.
-- **Network infrastructure**: Planning and implementation of secure and efficient networks.
-- **Remote support**: Remote technical support for quick problem resolution.
-- **Cybersecurity**: Protection against digital threats to keep data safe.
+<p align="center">
+	<a href="https://plug-ti.vercel.app/">
+		<img src="https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel" alt="Deploy Vercel" />
+	</a>
+	<img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React 18" />
+	<img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 6" />
+	<img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript 5" />
+</p>
 
-## 🚀 Technologies Used
+<p align="center">
+	<img src="./public/img/mock.png" alt="Plug application preview" width="100%" />
+</p>
 
-This project was developed with the following technologies:
+<p align="center">
+	<a href="#-layout">Layout</a> •
+	<a href="#-overview">Overview</a> •
+	<a href="#-technologies">Technologies</a> •
+	<a href="#-project-structure">Structure</a> •
+	<a href="#-how-to-run">How to Run</a> •
+	<a href="#-deploy">Deploy</a>
+</p>
 
-- [x] React.js + Vite
-- [x] TypeScript
-- [x] Node.js
-- [x] CSS
+## 🔖 Layout
+
+You can view the project layout through the link below:
+
+- [Plug layout](https://www.figma.com/design/ucJvxsqNevWLSL5n2UugfN/Plug---Solu%C3%A7%C3%B5es-em-TI?node-id=185-2&t=8p9YsZceO88UpCF8-1)
+
+Remembering that you need to have a [Figma](http://figma.com/) account to access it.
+
+## 💻 Overview
+
+**Plug - IT Solutions** is an institutional website for an IT services company focused on:
+
+- **Support and maintenance**: technical support to keep systems stable and available.
+- **Network infrastructure**: planning and implementation of secure, efficient networks.
+- **Remote support**: fast issue resolution without on-site assistance.
+- **Cybersecurity**: protection against digital threats and stronger data security.
+
+## 🚀 Technologies
+
+This project was built with:
+
+- React + Vite
+- TypeScript
+- React Router
+- React Hook Form + Zod
+- Framer Motion (motion)
+- CSS Modules
 
 ## 📂 Project Structure
 
 ```bash
-├── src/                    # Project Source Code
-│   ├── @types/             # TypeScript Global Declarations
-│   ├── assets/             # Images, icons and static files
-│   ├── components/         # Reusable components
-│   ├── context/            # Global States Contexts
-│   ├── motion/             # Animation Definitions
+├── public/
+│   └── img/                # Logo, thumbnails and mockups used in README and app
+├── src/
+│   ├── @types/             # Global TypeScript declarations
+│   ├── assets/             # Images, icons and static application files
+│   ├── components/         # Reusable components (UI and page sections)
+│   ├── contexts/           # Context API for shared state
+│   ├── motion/             # Animation variants and transitions
 │   ├── pages/              # Main pages
-│   ├── schema/             # Form validation structures
+│   ├── routes/             # Route configuration
+│   ├── schemas/            # Form validation schemas (Zod)
 │   ├── styles/             # Global styles and themes
-│   └── utils/              # Utilitarian functions
-├── .gitignore              # Files and folders ignored by GIT
-├── .eslint.config.js       # Eslint Settings File
-├── index.html              # Project HTML Page
-├── package-lock.json       # Blocking versions of installed dependencies.
-├── package.json            # Project dependencies and scripts
-├── README.md               # Project Documentation
-├── tsconfig.app.json       # Specific Settings for Application Build (TS)
-├── tsconfig.json           # General TypeScript Settings
-└── tsconfig.node.json      # TypeScript Settings for Node.JS Environment
+│   └── utils/              # Utility helpers
+├── eslint.config.js
+├── index.html
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── README.md
 ```
 
-## 🔧 How to Perform
+## 🔧 How to Run
 
-### 📦 Prerequisites
+### Prerequisites
 
-Before you start, make sure you have installed:
+- Node.js (LTS recommended)
+- npm, yarn, or pnpm
 
-- Node.js (latest stable version)
-- Package Manager (NPM, Yarn or PNPM)
-
-### ⚙️ Installation
-
-Clone the repository and install the facilities:
+### Installation
 
 ```bash
 git clone https://github.com/seu-usuario/nome-do-projeto.git
 cd nome-do-projeto
-npm install  # ou yarn install ou pnpm install
+npm install
 ```
 
-### ▶️ Running the project
+### Development
 
 ```bash
-npm run dev  # ou yarn dev ou pnpm dev
+npm run dev
 ```
 
-Access the project in: http://localhost:5173
+App available at: `http://localhost:5173`
 
-## 📌 Page Sections
+### Production Build
 
-- 🏠 **Home** – Company/Project Presentation.
-- 🛠 **Services** – Description of the services offered.
-- 📞 **Contact** – Form and contact information.
+```bash
+npm run build
+```
+
+### Local Build Preview
+
+```bash
+npm run preview
+```
+
+## 📌 Application Sections
+
+- **Home**: company presentation, value proposition, and highlights.
+- **Services**: details of the services offered.
+- **Contact**: form and contact information for lead conversion.
 
 ## 🚀 Deploy
 
-Access the project through the link: https://plug-ti.vercel.app/
+Access the live version at: **https://plug-ti.vercel.app/**
